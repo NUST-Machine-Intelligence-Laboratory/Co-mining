@@ -217,7 +217,7 @@ def parse_args():
     parser.add_argument('--epochs', type=int, default=200)
     
     parser.add_argument('--method', type=str, default='comining', help='standard, decoupling, coteaching, coteachingplus, jocor, peerlearning, comining')  
-    parser.add_argument('--data_root', type=str, default='~/data') 
+    parser.add_argument('--data_root', type=str, default='datasets') 
 
     parser.add_argument('--log', type=str, default='')
 
