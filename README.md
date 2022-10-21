@@ -39,7 +39,13 @@ Create a folder `datasets` and download `cifar10`/`cifar100`/[`web-bird`](https:
   ```
   
 ## Training
-- If you want to train the whole model, modify the corresponding parameters and run
+- We provide a demo `example.sh`. You can modify GPU device in the `example.sh` and use the default setting. Then directly run
+
+```python
+bash example.sh
+```
+
+- If you want to train the whole model with other settings, modify the corresponding parameters and run
 
 ```python
 CUDA_VISIBLE_DEVICES=0  python cifarmain.py --synthetic-data cifar10nc  --dataset cifar10  --noise-type symmetric  --closeset_ratio 0.2  --method  comining
@@ -52,13 +58,14 @@ CUDA_VISIBLE_DEVICES=0  python cifarmain.py --synthetic-data cifar100nc  --datas
 ```python
 CUDA_VISIBLE_DEVICES=0  python cifarmain.py --synthetic-data cifar80no  --dataset cifar100  --noise-type asymmetric  --closeset_ratio 0.4  --method  comining
 ```
-- We also provide a demo `example.sh` and you can modify GPU device in the `example.sh` and directly run
 
 ```python
-bash example.sh
+CUDA_VISIBLE_DEVICES=0  python webmain.py  --dataset web-bird  --w_pc 0.3  --w_tri 3  --w_re 0.01  --m 0.4 
 ```
 
-
-
+## Results
+The final experimental results are shown in the following table：
+<img src="fig/cifar_performance.png" width="100%" />
+<img src="fig/web_performance.png" width="100%" />
 
   
