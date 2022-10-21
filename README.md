@@ -23,6 +23,11 @@ Create a folder `datasets` and download `cifar10`/`cifar100`/[`web-bird`](https:
 
   ```
   ---datasets
+
+     ├── cifar10
+     |   └── cifar-10-batches-py
+     ├── cifar100
+     |    └── cifar-100-python
      ├── web-bird
      │   ├── train
      │   └── val
@@ -30,12 +35,9 @@ Create a folder `datasets` and download `cifar10`/`cifar100`/[`web-bird`](https:
      │   ├── train
      │   └── val
      └── web-aircraft
-     |   ├── train
-     |   └── tval
-     ├── cifar10
-     |   └── cifar-10-batches-py
-     └── cifar100
-         └── cifar-100-python 
+         ├── train
+         └── tval
+ 
   ```
   
 ## Training
