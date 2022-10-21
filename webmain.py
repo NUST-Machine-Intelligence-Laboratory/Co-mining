@@ -355,7 +355,7 @@ def parse_args():
     parser.add_argument('--epochs', type=int, default=60)
     
     parser.add_argument('--aug', type=str, default='ws')     
-    parser.add_argument('--data_root', type=str, default='~/data') 
+    parser.add_argument('--data_root', type=str, default='datasets') 
     
     parser.add_argument('--log', type=str, default='')
 
