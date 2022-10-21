@@ -4,7 +4,7 @@ This is the PyTorch implementation for our paper **Co-mining: Mining Informative
 
 ## Network Architecture
 The architecture of our proposed approach is as follows
-<img src="architecture.png" width="100%" />
+<img src="fig/architecture.png" width="100%" />
 
 ## Environment
 Create a virtual environment with python 3.7,
